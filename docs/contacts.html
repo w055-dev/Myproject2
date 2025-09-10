@@ -6,6 +6,7 @@
  <title>Главная - Название вашего сайта</title>
  <meta name="description" content="Краткое описание главной страницы вашего сайта">
  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+ <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
  <!-- Шапка сайта -->
@@ -35,6 +36,32 @@
  <h2>Наши соц.сети</h2>
  <p>Ссылка на соц.сети</p>
  </section>
+ <form id="ContactForm"></id>
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="phone">Ваш телефон:</label>
+        <input type="text" id="phone" name="phone">
+
+        <label for="email">Ваш email:</label>
+        <input type="text" id="email" name="email">
+
+        <label for="cource">Ваш курс</label>
+        <select id="cource" name="cource">
+            <option value="">--</option>
+            <option value="1">1 курс</option>
+            <option value="2">2 курс</option>
+            <option value="3">3 курс</option>
+            <option value="4">4 курс</option>
+            <option value="other">Другое</option>
+        </select>
+
+        <label for="message">Ваше сообщение</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit" id="submit-btn">Отправить</button>
+        <button type="rest" id="reset-btn">Очистить</button>
+ <form>
  </main>
   <footer>
  <p>&copy; 2023 Название вашего сайта. Все права защищены.</p>
